@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+:root {
+  --blue: blue;
+  --orange: orange;
+  --red: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mtb-10 {
+  margin: 10px 0;
+}
+
+.mtb-20 {
+  margin: 20px 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label,
+input,
+textarea {
+  outline: none;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-box {
+  padding: 5px;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pink {
+  background: pink;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.blue {
+  background: blue;
+}
+
+/* SET MIN-HEIGHTS */
+.min-height {
+  min-height: 720px;
+}
+
+/* NAVBAR */
+
+nav {
+  padding: 10px 5px;
+}
+
+.nav-container {
+  padding: 15px 10px;
+}
+
+.logo-container,
+.links {
+  margin: 10px;
+}
+
+.logo-container {
+  width: 25%;
+  margin: auto;
+}
+
+li {
+  margin: 15px;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #000;
+  padding: 2px;
+  transition: 0.5s;
+}
+
+.home-link {
+  border-bottom: 2px solid var(--blue);
+}
+.home-link:hover {
+  background: var(--blue);
+  color: #fff;
+}
+.prayer-intentions-link {
+  border-bottom: 2px solid var(--orange);
+}
+.prayer-intentions-link:hover {
+  background: var(--orange);
+  color: #fff;
+}
+.contact-us-link {
+  border-bottom: 2px solid var(--red);
+}
+.contact-us-link:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+/* Home */
+
+.homepage {
+  background: url(../src/images/mainbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.homepage-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  opacity: 0.9;
+  margin-top: 50px;
+  border: 1px solid #fff;
+}
+
+.inner-background {
+  background: #000;
+  padding: 8px;
+}
+
+.anchor-verse {
+  /* background: blue;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px; */
+}
+
+.register-button {
+  color: red;
+  background: #fff;
+  padding: 10px 5px;
+}
+
+.register-button:hover {
+  color: #fff;
+  background: green;
+  transition: 0.5s;
+}
+
+.countdown {
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.time {
+  color: red;
+}
+
+.grid-box {
+  /* border: 1px solid green; */
+}
+
+.event-details {
+  /* background: red;
+  color: #fff;
+  border-radius: 4px; */
+}
+
+/* FOOTER */
+.designer {
+  color: green;
+  text-decoration: none;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.designer:hover {
+  color: red;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* PRAYER INTENTION PAGE */
+
+/* Prayer Intention form */
+.add-prayer-block {
+  display: block;
+  margin: 20px;
+}
+
+.username {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  padding: 5px;
+  width: 65%;
+}
+
+.prayer-intention-textarea {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  width: 80%;
+  height: 100px;
+  resize: none;
+  padding: 5px;
+}
+
+.add-prayer-button {
+  background: var(--orange);
+  color: #fff;
+  outline: none;
+  padding: 5px;
+  border: orange;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-prayer-button:hover {
+  background: green;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.add-prayer-blurb {
+  padding-left: 22px;
+}
+
+.send-us-button {
+  color: green;
+}
+
+.back-button {
+  color: blue;
+}
+
+/* Prayer Intention prewview */
+.view-all-button {
+  text-decoration: none;
+  background: red;
+  color: #fff;
+  padding: 5px;
+}
+
+.view-all-button:hover {
+  color: #fff;
+  background: green;
+  transition: 0.5s;
+}
+
+.prayer-item-content {
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+
+/* Contact Form */
+.contact-block {
+  display: block;
+}
+
+.contact-name,
+.contact-email,
+.contact-message,
+.contact-submit-button {
+  padding: 5px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.contact-name {
+  width: 25%;
+}
+
+.contact-email {
+  width: 40%;
+}
+
+.contact-message {
+  width: 80%;
+  height: 250px;
+  resize: none;
+}
+
+.contact-submit-button {
+  background: orange;
+  color: #fff;
+  border: orange;
+  cursor: pointer;
+}
+
+.contact-submit-button:hover {
+  background: green;
+  color: #fff;
+  border: green;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .homepage-content {
+    margin-top: 100px;
+  }
+  .two-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-name,
+  .contact-email,
+  .contact-message {
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .two-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .two-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .logo-container {
+    width: 15%;
+    margin: 0;
+  }
+  ul {
+    margin-top: 50px;
+  }
+  li {
+    display: inline;
+    margin: 5px;
+  }
+  .countdown {
+    width: 60%;
+    margin: 20px auto 20px auto;
+  }
+  .two-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
